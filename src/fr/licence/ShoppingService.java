@@ -63,9 +63,6 @@ public class ShoppingService {
 				Client client = ClientBuilder.newClient( );
 				WebTarget webTarget = client.target("http://1-dot-inf63app9.appspot.com/rest/stock?isbn="+isbn+"&corr="+account);
 
-				// On récupère account : on l'envoi dans corr à stock service.
-				// Stock service récupère corr, et le renvoie 
-				// On vérifie ici qu'ils sont identiques
 				Response r = webTarget.request().get();
 				String s = r.readEntity(String.class);
 				if(r.getStatus() == 404){

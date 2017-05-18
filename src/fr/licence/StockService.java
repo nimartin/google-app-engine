@@ -54,31 +54,6 @@ public class StockService {
 		}
 		
 		return response;
-		
-//	    System.out.println("wallah");
-//		Book myBook = new Book("20",10);
-//		JSONObject bookJson = new JSONObject();
-//		bookJson.put("isbn", myBook.getIsbn());
-//		bookJson.put("stock", myBook.getStock());
-//		System.out.println("wallah2");
-//		Response response = Response.status(200).type(MediaType.APPLICATION_JSON).entity(bookJson.toString()).build();
-		
-//		System.out.println(myBook.toString());
-//		GenericEntity<Book> entity = new GenericEntity<Book>(myBook, Book.class);
-		//return Response.ok().entity(entity).build();
-		
-		
-		//return Response.noContent().build();
-	
-//		String returnResult = "{\"risks\": [";
-//		
-//		JSONObject jsonApproval = new JSONObject();
-//		
-//		returnResult += jsonApproval.put("Stock", stock) + ",";
-//		
-//		returnResult = returnResult.substring(0,returnResult.length()-1);
-//		returnResult += "]}";
-//		return returnResult;
-//		
+
 	}
 }
